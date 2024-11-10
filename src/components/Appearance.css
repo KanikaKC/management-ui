@@ -1,0 +1,77 @@
+.appearance-settings {
+    padding: 20px;
+    font-family: Arial, Bosch Office Sans, Helvetica, sans-serif;
+  }
+  
+  .appearance-heading {
+    color: black;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .theme-toggle {
+    cursor: pointer;
+    color: black; /* Default color */
+    text-decoration: none; /* No underline by default */
+    margin-bottom: 10px;
+    transition: color 0.3s ease; /* Smooth transition for color */
+  }
+  
+  .theme-toggle.active {
+    color: #295d89; /* Change text color when active */
+    text-decoration: underline; /* Underline when active */
+  }
+  
+  .theme-list {
+    background-color: whitesmoke; /* Background color for the theme list */
+    border-radius: 5px; /* Slightly rounded corners */
+    padding: 10px;
+    margin-top: 5px; /* Space above the theme list */
+  }
+  
+  .theme-option {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    padding: 15px 0; /* Increased top and bottom padding */
+    border-bottom: 1px solid #ccc; /* Line separator */
+    position: relative; /* For absolute positioning of the circle */
+  }
+  
+  .theme-option:last-child {
+    border-bottom: none; /* Remove border from the last item */
+  }
+  
+  .theme-icon {
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    margin-right: 10px; /* Space between icon and text */
+  }
+  
+  .theme-option span {
+    font-size: 16px; /* Adjust text size */
+    flex-grow: 1; /* Allow text to take available space */
+  }
+  
+ .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; /* Make it circular */
+  border: 2px solid #ccc; /* Default border color */
+  margin-left: 10px; /* Space between text and circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* For positioning the checkmark */
+}
+
+.circle.selected {
+  border-color: #295d89;
+  background-color: #295d89; /* Change border color when selected */
+}
+
+.checkmark {
+  width: 15px; /* Adjust size as needed */
+  height: 15px; /* Adjust size as needed */
+}
+
+  

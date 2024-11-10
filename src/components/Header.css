@@ -1,0 +1,227 @@
+/* Profile picture inside the header */
+.profile-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.profile-pic-header {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Hamburger menu with arrow */
+.hamburger-menu {
+  position: absolute;
+  right: 20px;
+  top: 60px;
+  background-color: #f8f9fa; /* Light grey background for the panel */
+  border: 1px solid #dcdcdc; /* Light border to match the dropdown style */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Softer shadow for dropdown */
+  z-index: 1000;
+  padding: 0; /* Remove default padding */
+  border-radius: 8px; /* Rounded corners */
+  width: 170px; /* Set width for dropdown */
+  border-radius: 0%;
+}
+
+/* Caret (arrow) pointing up above the menu */
+.hamburger-menu::before {
+  content: "";
+  position: absolute;
+  top: -20px; /* Position the arrow above the menu */
+  right: 20px; /* Adjust to align with the profile icon */
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #f8f9fa transparent; /* Arrow color matching menu background */
+  z-index: 1;
+}
+
+.hamburger-menu::after {
+  content: "";
+  position: absolute;
+  top: -19px; /* Slightly above the ::before arrow to create border effect */
+  right: 20px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #dcdcdc transparent; /* Arrow border color */
+  z-index: 0;
+}
+
+/* Menu item styling */
+.menu-item {
+  padding: 12px 15px; /* Consistent padding */
+  display: flex;
+  align-items: center;
+  font-family: Arial, Bosch Office Sans, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.menu-item:hover {
+  background-color: #e9ecef; /* Light hover effect */
+}
+
+/* Username item styling */
+.username-item {
+  pointer-events: none;
+  font-weight: bold;
+  padding: 15px;
+  font-family: Arial, Bosch Office Sans, Helvetica, sans-serif;
+  text-align: left;
+  background-color: #ffffff; /* White background for the top section */
+  font-size: 16px;
+  border-bottom: 1px solid #dcdcdc; /* Separator below username */
+}
+
+/* Menu option styling */
+.menu-option {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  color: inherit;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.menu-option i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.menu-option:hover {
+  color: #007BC0; /* Hover color */
+}
+
+/* Logout option styling */
+.logout-option {
+  color: #d9534f;
+}
+
+.logout-option:hover {
+  background-color: #f8d7da;
+}
+
+/* Divider between sections */
+.menu-separator {
+  margin: 0;
+  border: 0;
+  height: 1px;
+  background-color: #e0e0e0;
+}
+
+/* Logout button */
+.logout-button {
+  color: #333;
+  background: none;
+  border: none;
+  font-family: Arial, Bosch Office Sans, Helvetica, sans-serif;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-align: left;
+  padding: 10px 15px;
+  padding-left: 2%;
+}
+
+.logout-button:hover .logout-label {
+  color: #007BC0;
+}
+
+/* Header styling */
+.header {
+  position: relative;
+}
+
+.ribbon {
+  width: 100%;
+  position: absolute;
+  height: 15px;
+}
+
+.logo-container {
+  background-color: white;
+  height: 70px;
+  margin-left: auto;
+  width: 100%;
+}
+
+.logo {
+  display: block;
+  margin-right: 10%;
+  margin-left: 50px;
+  height: 25px !important;
+  transform: translate(0%, 100%) !important;
+}
+
+/* Hamburger icon styling */
+.hamburger {
+  cursor: pointer;
+  font-size: 25px;
+  margin-left: 92%;
+  margin-top: -8px;
+  align-items: center;
+}
+
+.menu-text {
+  font-size: 16px;
+  margin-left: 8px;
+  font-family: Arial, Bosch Office Sans, Helvetica, sans-serif;
+}
+
+.hamburger:hover .menu-text {
+  color: #007BC0;
+}
+
+.hamburger:hover + .hamburger-menu,
+.hamburger-menu:hover {
+  display: block; /* Show menu on hover */
+}
+
+/* Username styling */
+.username {
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  text-align: left;
+  padding-left: 10px;
+  font-family: Arial, Bosch Office Sans, Helvetica, sans-serif;
+}
+
+/* Settings button styling */
+.settings-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+  font-family: Arial, Bosch Office Sans, Helvetica, sans-serif;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.settings-button i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.settings-button:focus {
+  outline: none;
+}
+
+.settings-button:hover .settings-label {
+  color: #007BC0;
+}

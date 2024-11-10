@@ -1,0 +1,144 @@
+/* Container for the entire form */
+.goal-container {
+  background-color: #fff;
+  padding: 15px;
+  padding-top: 0;
+  border-radius: 0;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.goal-header {
+  background-color: rgb(120, 163, 224);
+  color: white;
+  padding: 10px;
+  text-align: left;
+  border-radius: 0; /* Rounded corners for the top only */
+  width: calc(100% + 30px);
+  margin-bottom: 30px;
+  transform: translateX(-15px); /* Align the header background to the left */
+  font-family: Arial, "Bosch Office Sans", Helvetica, sans-serif;
+}
+
+/* Update font size for form groups */
+.form-group-goal {
+  display: flex;
+  font-size: 14px; /* Updated font size */
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-group-goal label {
+  width: 100px; /* Fixed width for labels */
+  margin-right: 20px;
+  font-size: 14px; /* Updated font size */
+}
+
+.form-group-goal input {
+  flex-grow: 1;
+  padding: 4px;
+  font-size: 14px; /* Updated font size */
+  height: 30px; /* Set input height to 30px */
+  border-radius: 0;
+  border: 1px solid #ced4da;
+}
+
+/* Adjust the list items */
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-group-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+/* Button styles */
+.btn-edit, .btn-delete {
+  background: transparent; /* Remove background */
+  border: none; /* Remove border */
+  cursor: pointer; /* Change cursor to pointer */
+  padding: 0; /* Remove default padding */
+  margin-right: 10px; /* Add spacing between buttons */
+  font-family: Arial, "Bosch Office Sans", Helvetica, sans-serif;
+  position: relative; 
+}
+
+.btn-edit img, .btn-delete img {
+  width: 20px; 
+  height: 20px; 
+}
+
+/* Tooltip styles */
+.btn-edit::after,
+.btn-delete::after {
+  content: attr(data-sbtip); /* Use the data attribute for the tooltip text */
+  font-size: 12px;
+  position: absolute;
+  bottom: 100%; /* Position above the button */
+  left: 50%; /* Center the tooltip */
+  transform: translateX(-50%); /* Center the tooltip */
+  background-color: #fbbd66; /* Default tooltip background */
+  color: #fff; /* Tooltip text color */
+  padding: 5px; /* Padding around the text */
+  border-radius: 0; /* Rounded corners */
+  white-space: nowrap; /* Prevent text wrapping */
+  opacity: 0; /* Start hidden */
+  visibility: hidden; /* Start hidden */
+  transition: opacity 0.3s; /* Fade effect */
+  z-index: 10; /* Ensure tooltip appears above other elements */
+}
+
+.btn-edit:hover::after {
+  opacity: 1; /* Show the tooltip */
+  visibility: visible; /* Make it visible */
+}
+
+.btn-delete {
+  background-color: transparent;
+  justify-content: space-between; 
+}
+
+.btn-delete::after {
+  background-color: #f96649; /* Tooltip background for delete */
+}
+
+.btn-delete:hover::after {
+  opacity: 1; /* Show the tooltip */
+  visibility: visible; /* Make it visible */
+}
+
+/* Table styles */
+.table {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 14px; /* Updated font size */
+  font-family: Arial, "Bosch Office Sans", Helvetica, sans-serif;
+}
+
+.table th, .table td {
+  text-align: center; /* Center align text */
+  vertical-align: middle; /* Center align vertically */
+}
+
+.table-bordered {
+  border: 1px solid #dee2e6; /* Add border for better visibility */
+}
+
+.table td {
+  vertical-align: middle; /* Centers content vertically */
+}
+
+.btn-edit img, .btn-delete img {
+  font-family: Arial, "Bosch Office Sans", Helvetica, sans-serif;
+  width: 16px; /* Adjust width as needed */
+  height: 16px; /* Adjust height as needed */
+}
+
+.goals-header {
+  background-color: #10a8efa5;
+  padding: 10px;
+}

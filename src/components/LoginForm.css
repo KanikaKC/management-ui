@@ -1,0 +1,106 @@
+/* src/components/LoginForm.css */
+
+  .background-container{
+    position: fixed; /* Cover the whole viewport */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../components/Assets/login_background.png');
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    z-index: -1;
+    overflow: auto;
+  }
+
+  .login-container {
+    width: 30%;
+    margin: 50px auto;
+    font-family: Arial, Bosch Office Sans, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: white;
+    padding: 40px;
+    margin-top: 100px;
+  
+    }
+
+  .bosch-logo {
+    width: 120px; 
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .addLoginForm .loginGroup { 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .loginGroup button{
+    border-radius: 0;
+    width: 15%; 
+    font-size: 12px;
+    background-color: rgba(128, 128, 128, 0.142);
+    color: black;
+    box-shadow: none;
+    text-align: center;
+    margin-left: auto;
+    border-color:black;
+}
+  .loginheading {
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12px;
+    COLOR: #ffffff;
+    PADDING: 3px;
+    HEIGHT: 20px;
+    text-align: left;
+    BACKGROUND-COLOR: #0f68ad;
+  }
+
+  .login-text {
+    text-align: left;
+  }
+  
+  
+  .addLoginForm .loginGroup label {
+    display: block;
+    margin-bottom: 5px; 
+  }
+
+  .signup {
+    margin-top: 30px;
+    margin-left: auto;
+  }
+
+ .loginGroup .signup .btn.btn-primary{
+    border-radius: 0;
+    width: 18%; 
+    font-size: 12px;
+    background-color: rgba(128, 128, 128, 0.142);
+    box-shadow: none; 
+    text-align: center;
+    color: black;
+    padding: 0.25rem 0rem;
+    margin-left: 84%;
+    border-color:black;
+ }
+ 
+ .form-control-login {
+  height: 25px; 
+  padding: 5px; 
+  font-size: 14px;
+  width: 305px;
+}
+  
+  
+.social-login{
+  font-size: 15px;
+  font-family: Arial, Bosch Office Sans, Helvetica, sans-serif; 
+  background-color: white;
+}
+  

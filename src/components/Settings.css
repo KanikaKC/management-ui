@@ -1,0 +1,88 @@
+.settings-container {
+  position: absolute; 
+  top: 100px; 
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Offset for true centering */
+  text-align: left; 
+  padding: 20px; 
+  background-color: #f8f9fa; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  width: 800px; /* Width of the container */
+  height: 450px; /* Height of the container */
+  font-family: Arial, Bosch Office Sans, Helvetica, sans-serif;
+  font-size: 15px;
+  padding-top: 0%;
+}
+  
+  .settings-content {
+    flex-grow: 1;
+    padding: 10px;
+    margin-left:30%;
+    margin-top:-20%;
+    position: relative;
+  }
+
+  .navbar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-right: 1px solid #ccc; 
+  }
+  
+  .nav-link {
+    color: #333; /* Default text color */
+  }
+  
+  .nav-link:hover {
+    background-color: #e0e0e0; /* Change on hover */
+  }
+  
+  .bg-skyblue {
+    background-color: #a1d0e395; /* Sky blue background */
+    color: white; /* Text color for active link */
+  }
+
+   .nav-item-settings{
+    width: 190px;
+  } 
+
+  .profile-pic {
+    width: 50px; /* Set the size of the profile picture */
+    height: 50px; /* Set the size of the profile picture */
+    border-radius: 50%; /* Make it round */
+    margin-right: 10px; /* Space between image and text */
+  }
+  
+  .user-info {
+    display: flex; /* Flex for layout */
+    align-items: center; /* Center vertically */
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+}
+
+.username {
+    font-size: 0.9em; /* Adjust font size */
+    margin-top: 5px; /* Space between account label and username */
+    font-weight: normal; /* Normal weight for username */
+}
+
+
+.btn-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #000; /* Change to match your design */
+}
+
+.padding{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+  
+  

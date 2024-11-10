@@ -1,0 +1,88 @@
+.category-label {
+    background-color: rgb(32, 158, 89);
+    color: white;
+    padding: 2px 4px;
+    border-radius: 0%;
+    font-size: 12px;
+    font-family: Arial, Bosch Office Sans, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  
+  .category-label.negative {
+    background-color: rgba(255, 0, 0, 0.76); 
+  }
+
+  .table-container {
+    max-height: 500px; /* Set a max height for the table */
+    overflow: auto; /* Enable scrolling */
+
+  }
+
+  .table-cell {
+    font-family: Arial, "Bosch Office Sans", Helvetica, sans-serif;
+    font-size: 14px;
+  }
+
+  .header-background {
+    background-color: rgba(128, 128, 128, 0.5); /* Adjust color and opacity as needed */
+    border-radius: 0px;
+  }
+
+  .save{
+    font-size: 12px;
+    padding: 2px;
+    border-radius: 0;
+    width: auto;
+  }
+
+  .d-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pdf{
+    position:fixed;
+    margin-top: 2px;
+    margin-left: 91%; 
+    margin-right:0px;
+    align-items: center;
+    background-color: rgb(240, 43, 43);
+    padding: 5px; 
+    padding-right:15px;
+    padding-left: 15px;
+    font-family: Arial, Bosch Office Sans, Helvetica, sans-serif;
+    font-size: small;
+    border: none; 
+    color:white;
+  }
+
+  [data-sbtip] {
+    position: relative;
+    transition: background-color 0.3s;
+  }
+  
+  [data-sbtip]:hover::after {
+    content: attr(data-sbtip);
+    position: absolute;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    top: -30px; /* Adjust based on your layout */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 10;
+    font-size: 12px;
+  }
+  
+  /* Specific tooltip background styles for edit and delete buttons */
+  .btn-edit[data-sbtip]:hover::after {
+    background-color: orange;
+  }
+  
+  .btn-delete[data-sbtip]:hover::after {
+    background-color: red;
+  }
+  
+
+  
