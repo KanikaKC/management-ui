@@ -1,0 +1,37 @@
+.balance-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+  }
+  
+  svg {
+    display: block; /* Ensures no extra spacing around SVG */
+   
+  }
+  
+  .balance-text {
+    fill: white; /* Color for the balance amount */
+    font-weight: bold; /* Make it bold for emphasis */
+    text-anchor: middle; /* Center the text horizontally */
+  }
+  
+  .spending-text {
+    fill: rgba(200, 245, 239, 0.971); /* Color for the spending text */
+    text-anchor: middle; /* Center the text horizontally */
+    font-family: 'Arial', 'Helvetica', sans-serif; /* Set font family */
+    font-size: 0.8rem; /* Default font size for spending text */
+  }
+  
+  .alert {
+    margin-bottom: 10px; /* Space between alert and circle */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .balance-text {
+      font-size: 1.2rem; 
+    }
+
+  }
+  

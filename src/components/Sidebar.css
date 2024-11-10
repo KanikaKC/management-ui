@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  overflow: auto;
+}
+
+.sidebar {
+  position: fixed; 
+  top: 70px; 
+  left: 0;
+  height: calc(100% - 70px);
+  width: 250px; 
+  z-index: 1000; 
+  font-family: Arial, Bosch Office Sans, Helvetica, sans-serif;
+}
+
+
+.bg-active {
+  background-color: skyblue !important;
+  color: #fff;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(80, 92, 100, 0.8);
+}
+
+.nav-item {
+  margin-bottom: 20px;
+  border-radius: 0;
+  margin-top: 20px;
+}

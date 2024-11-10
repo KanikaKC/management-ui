@@ -1,0 +1,74 @@
+.background-container{
+    position: fixed; /* Cover the whole viewport */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../components/Assets/login_background.png');
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    z-index: -1;
+    overflow: auto;
+  }
+  
+  .addUser{
+    width: 40%;
+    margin: 50px auto;
+    font-family: Arial, Bosch Office Sans, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: white;
+    padding: 40px;
+  }
+
+ .addUserForm .inputGroup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.addUserForm .inputGroup input{
+    border: none; 
+    border-bottom: 2px solid rgba(128, 128, 128, 0.224); 
+    outline: none; 
+    padding: 5px; 
+    background: transparent;
+    font-size: 14px;
+    width: 100%; 
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.addUserForm .inputGroup input.active {
+    border-bottom-color: #82c14b; 
+}
+
+.addUser h3 {
+    color: #005791a2;
+    margin-bottom: 40px;
+  }
+
+.addUserForm .inputGroup label {
+    font-weight: bold; 
+    display: block; 
+    margin-bottom: 5px; 
+  }
+
+.inputGroup button{
+    border-radius: 0;
+    width: 22%; 
+    font-size: 15px;
+    background-color: #295d89;
+    padding: 10px 22px;
+    box-shadow: none;
+    outline: 'none'; 
+    text-align: center;
+}
+
+.login{
+    font-size: 15px;
+    font-family: Arial, Bosch Office Sans, Helvetica, sans-serif;
+    padding-top: 40px;
+    box-shadow: none;
+}
+
+

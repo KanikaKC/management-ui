@@ -1,0 +1,11 @@
+/* InfoBox.css */
+.info-box {
+    border: 1px solid #dee2e6; /* Border for the box */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    position: fixed; /* Fixed position */
+    z-index: 100; /* Above other elements */
+    width: 200px; /* Fixed width */
+  }
+  

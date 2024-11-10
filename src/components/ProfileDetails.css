@@ -1,0 +1,34 @@
+.profile-details {
+  padding: 20px;
+}
+
+.rounded-border {
+  border-radius: 0px; /* Rounded borders for modal */
+}
+
+.rounded-field {
+  border-radius: 0px; /* Rounded corners for input fields */
+  height: 30px; /* Set height for input fields */
+  font-size: 12px; /* Font size for input fields */
+}
+
+.modal-header {
+  border-bottom: 1px solid #dee2e6; /* Optional: add border to header */
+}
+
+.modal-footer .btn {
+  border-radius: 0px; /* Rounded corners for buttons */
+  font-size: 12px; /* Font size for buttons */
+}
+
+.profile-pic-visible {
+  display: flex;
+  align-items: center;
+}
+
+.placeholder-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
